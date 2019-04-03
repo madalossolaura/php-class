@@ -9,7 +9,7 @@
     $valorCurso2 = 1000.98;
     $imagemCurso2 = "marketing.jpg";
 
-    $usuario = [
+  $usuario = [
         "Nome" => "Laura",
         "Email" => "teste@teste.com",
         "Senha" => "123456",
@@ -44,7 +44,7 @@
             <?php if ($usuario["NivelAcesso"] == 1) : ?>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ações <span class="caret"></span></a>
+                    <a href="#" class="drop;down-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ações <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Edita tudo</a></li>
                             <li><a href="#">e aqui é o chefão</a></li>
