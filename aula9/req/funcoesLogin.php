@@ -21,15 +21,15 @@
 
     function logarUsuario($email, $senha) {
         global $nomeArquivo;
-        $logado = false;
+        $nomeLogado = "";
         $usuariosJson = file_get_contents($nomeArquivo);
         $arrayUsuarios = json_decode($usuariosJson, true);
         foreach($arrayUsuarios["usuarios"] as $chave => $valor) {
             if ($valor["email"] == $email && password_verify($senha, $valor["senha"])) {
-                $logado = true;
+                $nomeLogado = $valor["nome"];
                 break;
             }
         }
-        return $logado;
+        return $nomeLogado;
     }
 ?>
